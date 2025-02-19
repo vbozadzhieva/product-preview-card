@@ -96,7 +96,7 @@ footer {
 footer .price {
     font-family: 'Fraunces', serif;
     color: var(--green-500);
-    font-size: 2.3em;
+    font-size: 2em;
     font-weight: 700;
     margin-bottom: 30px;
 }
@@ -129,4 +129,42 @@ footer .price::after {
 
 .add-to-card-btn i {
     margin-right: 10px;
+}
+
+@media(max-width: 630px) {
+    .card-container {
+        margin: 20px 40px;
+    }
+}
+
+@media(max-width: 375px) {
+    .card-container {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .media-img,
+    .content-container {
+        max-width: 100%;
+    }
+
+    .content-container {
+        padding: 20px;
+    }
+
+    .content-container header h2 {
+        font-size: 2.2em;
+    }
+
+    .content-container>p {
+        font-size: 0.9em;
+    }
+
+    .content-container header p {
+        font-size: 0.8em;
+    }
+
+    footer .add-to-card-btn {
+        font-size: 0.9em;
+    }
 }
